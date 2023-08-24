@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="q09lbwm28b" x1="25.186%" x2="68.01%" y1="41.42%" y2="67.902%">
+            <stop offset="0%" stop-color="#888A91"/>
+            <stop offset="100%" stop-color="#8B8B92"/>
+        </linearGradient>
+        <linearGradient id="69bf3et4uf" x1="87.452%" x2="54.616%" y1="87.452%" y2="54.624%">
+            <stop offset="0%" stop-color="#7FAAFF"/>
+            <stop offset="100%" stop-color="#7ABEF5"/>
+        </linearGradient>
+        <linearGradient id="vppwhv6x0g" x1="12.437%" x2="50%" y1="12.421%" y2="53.971%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".14"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <path id="ta4xbrgbka" d="M57.955 23.97c-.008-3.052-1.227-5.976-3.39-8.128-2.164-2.153-5.093-3.358-8.145-3.35h-1.59C42.407 4.864 35.218-.232 27.218.008c-8 .24-14.87 5.758-16.832 13.518C4.527 13.938-.01 18.817 0 24.691c.016 6.168 5.025 11.157 11.193 11.148h12.739l22.54-.057c3.052-.003 5.978-1.22 8.132-3.383 2.154-2.163 3.36-5.093 3.35-8.146v-.284z"/>
+        <path id="repu1vc4se" d="M24.494 43.748c9.175-.004 17.856-4.158 23.616-11.3 5.759-7.142 7.979-16.506 6.038-25.473 14.757 3.195 24.92 16.752 23.849 31.813-1.072 15.06-13.052 27.043-28.112 28.116-15.06 1.074-28.62-9.088-31.817-23.844 2.112.455 4.266.686 6.426.688z"/>
+        <path id="0b0p2hln2h" d="M0 0L14.164 0 14.164 14.164 0 14.164z"/>
+        <filter id="cfple2p9jd" width="150%" height="150%" x="-25%" y="-25%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-884 -643) translate(884 643)">
+                <g transform="translate(6.42 13.025)">
+                    <mask id="62fojoe2sc" fill="#fff">
+                        <use xlink:href="#ta4xbrgbka"/>
+                    </mask>
+                    <use fill="url(#q09lbwm28b)" fill-opacity=".8" fill-rule="nonzero" xlink:href="#ta4xbrgbka"/>
+                    <g fill-rule="nonzero" mask="url(#62fojoe2sc)">
+                        <use fill="#000" filter="url(#cfple2p9jd)" xlink:href="#repu1vc4se"/>
+                        <use fill="url(#69bf3et4uf)" xlink:href="#repu1vc4se"/>
+                    </g>
+                </g>
+                <circle cx="34.176" cy="30.938" r="17.909" fill="url(#vppwhv6x0g)" fill-rule="nonzero"/>
+                <path fill="url(#69bf3et4uf)" fill-rule="nonzero" d="M30.915 56.205c9.175-.004 17.856-4.158 23.615-11.3 5.76-7.142 7.979-16.506 6.038-25.473 14.757 3.195 24.92 16.752 23.85 31.813-1.072 15.06-13.052 27.042-28.113 28.116-15.06 1.074-28.62-9.088-31.816-23.844 2.111.455 4.265.686 6.426.688z"/>
+                <g transform="translate(77.273 69.886)">
+                    <mask id="hp1qprccmi" fill="#fff">
+                        <use xlink:href="#0b0p2hln2h"/>
+                    </mask>
+                    <path fill="#FFDD1C" d="M7.082 0C5.406 4.047 4.047 5.406 0 7.082c4.047 1.677 5.406 3.036 7.082 7.082 1.676-4.046 3.035-5.405 7.082-7.082C10.118 5.406 8.758 4.047 7.082 0" mask="url(#hp1qprccmi)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="ye8iopkz6b" x1="3.676%" x2="69.016%" y1="28.705%" y2="65.67%">
+            <stop offset="0%" stop-color="#ACAEB3"/>
+            <stop offset="100%" stop-color="#96989C"/>
+        </linearGradient>
+        <linearGradient id="p1da4n09jf" x1="87.452%" x2="54.616%" y1="87.452%" y2="54.624%">
+            <stop offset="0%" stop-color="#7FAAFF"/>
+            <stop offset="100%" stop-color="#7ABEF5"/>
+        </linearGradient>
+        <linearGradient id="lwz2kgbltg" x1="12.437%" x2="36.77%" y1="12.421%" y2="36.77%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="25%" stop-color="#FFF" stop-opacity=".72"/>
+            <stop offset="62%" stop-color="#FFF" stop-opacity=".34"/>
+            <stop offset="88%" stop-color="#FFF" stop-opacity=".09"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="p1xw6d0elj" x1="42.56%" x2="67.435%" y1="8.881%" y2="66.111%">
+            <stop offset="0%" stop-color="#FFB90A"/>
+            <stop offset="48.672%" stop-color="#FFCC14"/>
+            <stop offset="100%" stop-color="#FFAC14"/>
+        </linearGradient>
+        <path id="d4q4in46za" d="M57.955 23.97c-.008-3.052-1.227-5.976-3.39-8.128-2.164-2.153-5.093-3.358-8.145-3.35h-1.59C42.407 4.864 35.218-.232 27.218.008c-8 .24-14.87 5.758-16.832 13.518C4.527 13.938-.01 18.817 0 24.691c.016 6.168 5.025 11.157 11.193 11.148h12.739l22.54-.057c3.052-.003 5.978-1.22 8.132-3.383 2.154-2.163 3.36-5.093 3.35-8.146v-.284z"/>
+        <path id="o23pmsceae" d="M24.494 43.748c9.175-.004 17.856-4.158 23.616-11.3 5.759-7.142 7.979-16.506 6.038-25.473 14.757 3.195 24.92 16.752 23.849 31.813-1.072 15.06-13.052 27.043-28.112 28.116-15.06 1.074-28.62-9.088-31.817-23.844 2.112.455 4.266.686 6.426.688z"/>
+        <path id="d1ok1erd4h" d="M0 0L14.164 0 14.164 14.164 0 14.164z"/>
+        <filter id="rsav2h4a8d" width="150%" height="150%" x="-25%" y="-25%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-1021 -643) translate(1021 643) translate(6.25 12.5)">
+                    <g transform="translate(.17 .525)">
+                        <mask id="azcv33qonc" fill="#fff">
+                            <use xlink:href="#d4q4in46za"/>
+                        </mask>
+                        <use fill="url(#ye8iopkz6b)" fill-rule="nonzero" xlink:href="#d4q4in46za"/>
+                        <g fill-rule="nonzero" mask="url(#azcv33qonc)">
+                            <use fill="#000" filter="url(#rsav2h4a8d)" xlink:href="#o23pmsceae"/>
+                            <use fill="url(#p1da4n09jf)" xlink:href="#o23pmsceae"/>
+                        </g>
+                    </g>
+                    <circle cx="27.926" cy="18.438" r="17.909" fill="url(#lwz2kgbltg)" fill-rule="nonzero" opacity=".1"/>
+                    <path fill="url(#p1da4n09jf)" fill-rule="nonzero" d="M24.665 43.705c9.175-.004 17.856-4.158 23.615-11.3 5.76-7.142 7.979-16.506 6.038-25.473 14.757 3.195 24.92 16.752 23.85 31.813-1.072 15.06-13.052 27.042-28.113 28.116-15.06 1.074-28.62-9.088-31.816-23.844 2.111.455 4.265.686 6.426.688z"/>
+                    <g transform="translate(71.023 57.386)">
+                        <mask id="0melawxvri" fill="#fff">
+                            <use xlink:href="#d1ok1erd4h"/>
+                        </mask>
+                        <path fill="#FFDD1C" d="M7.082 0C5.406 4.047 4.047 5.406 0 7.082c4.047 1.677 5.406 3.036 7.082 7.082 1.676-4.046 3.035-5.405 7.082-7.082C10.118 5.406 8.758 4.047 7.082 0" mask="url(#0melawxvri)"/>
+                    </g>
+                </g>
+                <path fill="url(#p1xw6d0elj)" fill-rule="nonzero" d="M27.756 27.926L6.989 48.682c-.128.125-.167.315-.098.48.069.166.231.272.41.27H18.75l-6.34 13.017c-.103.192-.048.43.127.558.176.128.419.108.571-.047l19.278-18.318c.057-.053.074-.135.046-.206-.03-.072-.1-.119-.176-.118h-9.767l5.58-16.199c.03-.083-.002-.177-.078-.224-.076-.047-.174-.034-.235.031z" transform="translate(-1021 -643) translate(1021 643)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="uo3n1g131a" x1="50%" x2="50%" y1="3.225%" y2="63.102%">
+            <stop offset="0%" stop-color="#FFCC14"/>
+            <stop offset="1%" stop-color="#FFCC14" stop-opacity=".98"/>
+            <stop offset="9%" stop-color="#FFC711" stop-opacity=".72"/>
+            <stop offset="18%" stop-color="#FFC30F" stop-opacity=".5"/>
+            <stop offset="26%" stop-color="#FFBF0D" stop-opacity=".32"/>
+            <stop offset="34%" stop-color="#FFBC0C" stop-opacity=".18"/>
+            <stop offset="41%" stop-color="#FFBB0B" stop-opacity=".08"/>
+            <stop offset="47%" stop-color="#FFB90A" stop-opacity=".02"/>
+            <stop offset="53%" stop-color="#FFB90A" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFB90A" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="d7m020mcmb" x1="50%" x2="50%" y1=".876%" y2="54.466%">
+            <stop offset="0%" stop-color="#FFCC14"/>
+            <stop offset="1%" stop-color="#FFCC14" stop-opacity=".98"/>
+            <stop offset="18%" stop-color="#FFC711" stop-opacity=".72"/>
+            <stop offset="34%" stop-color="#FFC30F" stop-opacity=".5"/>
+            <stop offset="49%" stop-color="#FFBF0D" stop-opacity=".32"/>
+            <stop offset="64%" stop-color="#FFBC0C" stop-opacity=".18"/>
+            <stop offset="78%" stop-color="#FFBB0B" stop-opacity=".08"/>
+            <stop offset="90%" stop-color="#FFB90A" stop-opacity=".02"/>
+            <stop offset="100%" stop-color="#FFB90A" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="zoscwmcruc" x1="124.316%" x2="38.894%" y1="58.246%" y2="48.767%">
+            <stop offset="0%" stop-color="#EDC983" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#E3B357"/>
+        </linearGradient>
+        <linearGradient id="ytlsp64cid" x1="211.117%" x2="26.662%" y1="74.377%" y2="46.481%">
+            <stop offset="0%" stop-color="#EDC983" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#E3B357"/>
+        </linearGradient>
+        <linearGradient id="rz23lsslde" x1="540.749%" x2="131.441%" y1="213.696%" y2="77.187%">
+            <stop offset="0%" stop-color="#EDC983" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#E3B357"/>
+        </linearGradient>
+        <linearGradient id="jl74ybx9bf" x1="164.756%" x2="14.311%" y1="64%" y2="45.649%">
+            <stop offset="0%" stop-color="#EDC983" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#E3B357"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g fill="url(#uo3n1g131a)" opacity=".2" transform="translate(-1706 -371) translate(1706 371) translate(19.886 14.205)">
+                    <ellipse cx="29.83" cy="29.626" rx="29.596" ry="29.314"/>
+                </g>
+                <g fill="url(#d7m020mcmb)" opacity=".7" transform="translate(-1706 -371) translate(1706 371) translate(24.432 19.318)">
+                    <circle cx="25.241" cy="25.322" r="24.838"/>
+                </g>
+                <path fill="url(#zoscwmcruc)" d="M12.942 52.273H86.49c2.6.007 5 1.42 6.294 3.71 1.295 2.288 1.287 5.104-.019 7.386-1.306 2.282-3.713 3.683-6.313 3.676H12.98c-4.02.011-7.288-3.287-7.298-7.367-.01-4.08 3.24-7.395 7.26-7.405z" opacity=".9" transform="translate(-1706 -371) translate(1706 371)"/>
+                <path fill="url(#ytlsp64cid)" d="M45.13 37.5h31.84c2.678 0 4.848 2.162 4.848 4.83 0 2.667-2.17 4.83-4.848 4.83H45.19c-2.678 0-4.848-2.163-4.848-4.83 0-2.668 2.17-4.83 4.848-4.83h-.06z" transform="translate(-1706 -371) translate(1706 371)"/>
+                <path fill="url(#rz23lsslde)" d="M21.882 37.5h9.05c2.686 0 4.863 2.162 4.863 4.83 0 2.667-2.177 4.83-4.863 4.83H21.91c-2.686 0-4.864-2.163-4.864-4.83 0-2.668 2.178-4.83 4.864-4.83h-.027z" transform="translate(-1706 -371) translate(1706 371)"/>
+                <path fill="url(#jl74ybx9bf)" d="M29.285 72.16h41.408c2.692 0 4.875 2.161 4.875 4.829 0 2.667-2.183 4.83-4.875 4.83H29.307c-2.692 0-4.875-2.163-4.875-4.83 0-2.668 2.183-4.83 4.875-4.83h-.022z" opacity=".8" transform="translate(-1706 -371) translate(1706 371)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="b9b2c9a83b" x1="12.329%" x2="87.763%" y1="31.694%" y2="82.421%">
+            <stop offset="0%" stop-color="#ACAEB3"/>
+            <stop offset="100%" stop-color="#96989C"/>
+        </linearGradient>
+        <linearGradient id="2ldyycrwif" x1="-6.956%" x2="85.88%" y1="-6.956%" y2="85.88%">
+            <stop offset="0%" stop-color="#FFCC14"/>
+            <stop offset="100%" stop-color="#FFB90A"/>
+        </linearGradient>
+        <linearGradient id="eqy1gi7j2g" x1="12.445%" x2="36.774%" y1="12.445%" y2="36.774%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="25%" stop-color="#FFF" stop-opacity=".72"/>
+            <stop offset="62%" stop-color="#FFF" stop-opacity=".34"/>
+            <stop offset="88%" stop-color="#FFF" stop-opacity=".09"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="8g6sp2ogsh" x1="35.749%" x2="65.913%" y1="35.716%" y2="65.923%">
+            <stop offset="1%" stop-color="#FFD800" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFD800"/>
+        </linearGradient>
+        <filter id="makw4aeh7d" width="173.1%" height="173.1%" x="-36.6%" y="-36.6%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+        </filter>
+        <circle id="pu4qub1j6e" cx="48.074" cy="39.18" r="28.71"/>
+        <path id="nq8vdf80ea" d="M49.773 23.703c-.014-4.271-2.883-8.005-7.006-9.12C41.75 6.734 35.37.669 27.477.052c-7.894-.616-15.14 4.383-17.363 11.982C4.43 12.358-.01 17.067 0 22.76c.016 5.92 4.819 10.71 10.739 10.71H21.76l18.58-.045c5.224-.022 9.444-4.27 9.432-9.495v-.227z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-1021 -507) translate(1021 507)">
+                <g transform="translate(8.523 15.655)">
+                    <mask id="3z1ko4913c" fill="#fff">
+                        <use xlink:href="#nq8vdf80ea"/>
+                    </mask>
+                    <use fill="url(#b9b2c9a83b)" fill-rule="nonzero" xlink:href="#nq8vdf80ea"/>
+                    <g fill-rule="nonzero" mask="url(#3z1ko4913c)">
+                        <use fill="#000" filter="url(#makw4aeh7d)" xlink:href="#pu4qub1j6e"/>
+                        <use fill="url(#2ldyycrwif)" xlink:href="#pu4qub1j6e"/>
+                    </g>
+                </g>
+                <circle cx="34.693" cy="29.54" r="16.733" fill="url(#eqy1gi7j2g)" fill-rule="nonzero" opacity=".15"/>
+                <path fill="url(#8g6sp2ogsh)" fill-rule="nonzero" d="M90.688 52.318v-.045c0-18.828-15.264-34.091-34.091-34.091-18.828 0-34.091 15.263-34.091 34.09v.097c0 18.828 15.263 34.091 34.09 34.091 18.828 0 34.092-15.263 34.092-34.09v-.052z" opacity=".3"/>
+                <circle cx="56.597" cy="51.994" r="28.71" fill="url(#2ldyycrwif)" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="public/index.css"> -->
+    <title>AIOS</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 style="text-align: center; font-size: 130px;">AIOS</h1>
+            <p style="text-align: center;">AI</p>
+        </header>
+        <div class="relative_container">
+            <div class="flex_container">
+                <div class="line1">
+                    <input type="text" id="textInput" maxlength="20" placeholder="음성으로 변환할 텍스트를 입력하세요.">
+                    <button id="extractButton">음성으로 변환</button>
+                </div>
+                <div class="line2">
+                    <input type="text" id="textSpeech" maxlength="20" placeholder="음성이 텍스트로 변환됩니다." disabled>
+                    <button onclick="sendSpeech()">마이크 입력</button>
+                    <!-- <button>마이크 입력</button> -->
+                </div>
+                <div class="line3">
+                    <input type="text" id="questinText" maxlength="20" placeholder="질문할 내용을 입력하세요.">
+                    <button onclick="stateClick()">질문하기</button>
+                </div>
+                <div class="line4">
+                    <input type="text" id="resultInput" maxlength="20" placeholder="현재 상태입니다." value="재실" disabled>
+                </div>
+                <div class="line5">
+                    <input type="text" id="temperatureInput" maxlength="20" placeholder="현재 날씨 입니다." disabled>
+                    <input type="text" id="humidityInput" maxlength="20" placeholder="현재 날씨 입니다." disabled>
+                    <button>날씨 갱신</button>
+                </div>
+                <input type="text" id="timeInput" maxlength="20" placeholder="현재 시간 입니다." disabled>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // window.onload = function () { sendSpeech(); }
+    window.onload = function () {
+        date();
+        setInterval(date, 1000);
+    }
+</script>
+<script type="text/javascript" src="js/index.js"></script> 
+<script type="text/javascript" src="js/stt.js"></script> 

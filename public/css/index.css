@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+header {
+    user-select: none;
+}
+
+input, button {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+}
+
+input {
+    width: 500px; 
+    padding: 10px;
+    background: white;
+}
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px;
+    width: 160px !important;
+}
+button:focus {
+    outline: none;
+}
+button:active {
+    border-color: gray;
+    background: gainsboro;
+}
+
+.container {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.relative_container {
+    position: relative;
+    width: 100%;
+    height: 370px;
+}
+
+.flex_container {
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class^="line"] {
+    display: flex;
+}
+
+.line3 > button {
+    background: greenyellow;
+}
+.line3 > button:active {
+    border: 2px solid green;
+    color: white;
+}
+
+.line5 > input {
+    width: 245px;
+}
