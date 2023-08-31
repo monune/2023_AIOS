@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const fs = require("fs");
 const textToSpeech = require("@google-cloud/text-to-speech");
-const projectId = "plated-valor-393815";
+const projectId = "[SECRET_KEY]"; // key
 const client = new textToSpeech.TextToSpeechClient({ projectId });
 
 // 미들웨어 설정
