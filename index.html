@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- <link rel="stylesheet" type="text/css" href="public/index.css"> -->
     <title>AIOS</title>
 </head>
-
 <body>
     <div class="container">
         <header>
-            <h1 style="text-align: center; font-size: 130px;">AIOS</h1>
-            <p style="text-align: center;">AI</p>
+            <h1 style="font-size: 130px;">AIOS</h1>
+            <p>Application Interface Occupancy Signation</p>
+            <img id="weather" src="svg/icon_flat_wt1.svg" alt="날씨 정보">
         </header>
         <div class="relative_container">
             <div class="flex_container">
@@ -36,9 +36,9 @@
                     <input type="text" id="resultInput" maxlength="20" placeholder="현재 상태입니다." value="재실" disabled>
                 </div>
                 <div class="line5">
-                    <input type="text" id="temperatureInput" maxlength="20" placeholder="현재 날씨 입니다." disabled>
-                    <input type="text" id="humidityInput" maxlength="20" placeholder="현재 날씨 입니다." disabled>
-                    <button>날씨 갱신</button>
+                    <input type="text" id="temperatureInput" maxlength="20" placeholder="현재 온도 입니다." disabled>
+                    <input type="text" id="weatherInput" maxlength="20" placeholder="현재 날씨 입니다." disabled>
+                    <button onclick="callWeather()">날씨 갱신</button>
                 </div>
                 <input type="text" id="timeInput" maxlength="20" placeholder="현재 시간 입니다." disabled>
             </div>
@@ -51,8 +51,10 @@
     // window.onload = function () { sendSpeech(); }
     window.onload = function () {
         date();
+        callWeather();
         setInterval(date, 1000);
+        setInterval(callWeather, 3000);
     }
 </script>
-<script type="text/javascript" src="js/index.js"></script> 
-<script type="text/javascript" src="js/stt.js"></script> 
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/stt.js"></script>

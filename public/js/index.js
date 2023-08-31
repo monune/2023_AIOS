@@ -34,6 +34,7 @@ document.getElementById("extractButton").addEventListener("click", () => {
  */
 const stateClick = async () => {
   const state = document.getElementById("questinText").value;
+  console.log(state);
   fetch("/state", {
     method: "POST",
     headers: {
@@ -46,10 +47,9 @@ const stateClick = async () => {
       return response.json();
     })
     .then((data) => {
-      // 응답 처리
       if (data.message === "OK") { // success
         const json = data; // 지역 변수에 상태 저장 이후 검사
-        console.log(json);
+        console.log(data);
         if (data.word.includes("state")) { // state_n
           switch (data.word) {
             case "state_1": changeState("출장"); break;
@@ -62,10 +62,10 @@ const stateClick = async () => {
         //   console.log("Server response: data word");
         } else if (json.word === "date") {
           date();
+        } else {
+          console.log("Server response: Not OK");
         }
-      } else {
-        console.log("Server response: Not OK");
-      }
+      } 
     })
     .catch((error) => {
       console.error(error);
@@ -120,23 +120,40 @@ const changeState = async (state) => {
   }
 };
 
+const callWeather = () => {
+  fetch("/imgState", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ text: "img" }),
+  })
+    .then((response) => {
+      if (!response.ok) throw new Error("Network response was not ok");
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data); // 서버로부터 받은 응답 데이터 출력
+      const gclass = data.class;
+      const weather = data.weather;
+      const temp = data.temperature;
+      document.getElementById('temperatureInput').value = temp;
+      document.getElementById('weatherInput').value = weather;
+      try {
+        document.getElementById('weather').src = "svg/icon_flat_" + gclass + ".svg";
+      } catch(err) {
+        console.log(err);
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+};
 /**
- *  말로 날씨랑 재실 표현 - 완
-    재실 (출장, 퇴근, 재실) - 완
-
     폼 > PHP
     INPUT 보내기
 
     백엔드 (DB) 해야지
 
-    블라인드 태그 > 글자로
-
     웹 기능
-
-    상시 마이크 ON (버튼으로 ON/OFF) - 대충 됨
-
-    날씨(상태) / 시간 / 
-    기능(출장/재실/회의/퇴근/교내) - 완
-
-    시간 몇 시 (dhks - 콘솔 완
  */

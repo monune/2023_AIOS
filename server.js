@@ -1,6 +1,3 @@
-// netstat -ano | findstr :3000
-// taskkill /PID <PID> /F
-
 const express = require("express");
 const cheerio = require('cheerio');
 const axios = require('axios');
@@ -21,7 +18,7 @@ const path = require("path");
 const publicPath = path.join(__dirname, "public");
 app.use(express.static(publicPath));
 
-// 루트 경로 처리
+// index.html 경로 처리
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
@@ -37,6 +34,9 @@ const getHTML = async (keyword) => {
   }
 };
 
+let g_class;
+let g_temp;
+let g_weather;
 /**
  * @param {string} keyword 검색 키워드 (날씨)
  * @returns {{temperature: temperature, weather: weatherState}} 검색 날씨의 온도와 날씨 상태
@@ -52,11 +52,16 @@ const parsing = async (keyword) => {
 
   const splitTemp = temp.trim().split(" ");
   const temperature = String(splitTemp[1]).replace(/^온도/, "");
-  const textArray = img.split(" ");
+  const textArray = img.split(" ");  // 공백 제거
+  const imgClass = textArray[1].split("_"); // _ 제거
 
-  console.log("이미지 클래스 명: " + textArray[1]);
+  console.log("이미지 클래스 명: " + imgClass[1]);
   console.log("온도: " + temperature);
   console.log("배경: " + weather);
+  
+  g_class = imgClass[1];
+  g_temp = temperature;
+  g_weather = weather;
 }
 
 /**
@@ -87,14 +92,15 @@ const tts = async (word) => {
  * @returns {string} 반환할 함수 호출
  */
 const state = async (word) => {
-  if (word.includes("날씨")) return await saveTTS("weather"); // 크롤링
-  else if (word.includes("날짜")) return await saveTTS("date"); // 현재 시간 반환
-  else if (word.includes("시간")) return await saveTTS("time");
+  if (word.includes("날씨")) return saveTTS("weather"); // 크롤링
+  else if (word.includes("날짜")) return saveTTS("date"); // 현재 시간 반환
+  else if (word.includes("시간")) return saveTTS("time");
   else if (word.includes("변경")) {
     const keywords = ["출장", "재실", "교내", "회의", "퇴근"];
     const stateValues = [1, 2, 3, 4, 5];
     const index = keywords.findIndex(keyword => word.includes(keyword)); // 검사
-    return await saveTTS("state", index !== -1 ? stateValues[index] : 0);
+    console.log(stateValues[index]);
+    return saveTTS("state", index !== -1 ? stateValues[index] : 0);
   }
 };
 
@@ -116,20 +122,11 @@ const saveTTS = async (keyword, state) => {
       case 3: return "state_3";
       case 4: return "state_4";
       case 5: return "state_5";
-      default: return ("state_err");
+      default: return "state_err";
     }
   } else console.log("server at state_err");
 };
 
-/** tts 호출 함수 */
-
-/**
- * weather includes 간단한 단어 구분 함수, 
- * 사용할 거면 조건을 추가
- * @param word 변경해 return 할 키워드
- */
-
-// 클라이언트에서 tts 호출
 app.post("/tts", async (req, res) => {
   const { text } = req.body;
   try {
@@ -140,18 +137,26 @@ app.post("/tts", async (req, res) => {
   }
 });
 
-// 클라이언트 에서 State 호출
 app.post("/state", async (req, res) => {
   const { text } = req.body;
   try {
-    let result = await state(text);
-    res.status(200).json({ message: "OK", word: result });
+    const result = await state(text); // await 사용한 Promise 대기
+    console.log(result);
+    res.status(200).json({ message: "OK", word: result});
   } catch (error) {
     res.status(500).json({ error: "Json 전달 오류 발생" });
   }
 });
 
-const timeInterval = 1000 * 30; // 30 sec
+app.post("/imgState", async (req, res) => {
+  try {
+    res.status(200).json({ message: "OK", class: g_class, weather: g_weather, temperature: g_temp });
+  } catch (error) {
+    res.status(500).json({ error: "Json 전달 오류 발생" });
+  }
+});
+
+const timeInterval = 3000; // 
 setInterval(() => {
   parsing('날씨');
 }, timeInterval);
